@@ -1,0 +1,7 @@
+*PLEASE INSERT A VALID DAY AND PLEASE DO NOT CHANGE LAST REMINDER DATE*
+(REMINDER DATE = DAY YOU WANT TO SEND REMINDER)
+(HOW TO ENTER CHORES: Chore List = chore1,chore2,chore3,etc.)
+
+Reminder Date = Monday
+Last Reminder Date = None
+Chore List = Trash,Dishes,Dishes
