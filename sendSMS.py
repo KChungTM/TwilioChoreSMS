@@ -16,7 +16,7 @@ try:
     # ASSIGNS VARIABLES BASED ON CONFIG
     reminder_day = content[4]
     if content[5] != "None":
-        last_sent = content[5].split("=")
+        last_sent = content[5].split("=")[0].split("/")
         last_sent = date(int(last_sent[0]), int(last_sent[1]), int(last_sent[2]))
     else:
         last_sent = None
@@ -48,7 +48,7 @@ try:
             client.messages.create(to=phone[1], from_=my_twilio, body=message)
         print("Sent reminder to all people...")
 
-        config = "Reminder Date = {}\nLast Reminder Date = {},{},{}\n".format(reminder_day,
+        config = "Reminder Date = {}\nLast Reminder Date = {}/{}/{}\n".format(reminder_day,
                                                                             current_date.year,
                                                                             current_date.month,
                                                                             current_date.day)
